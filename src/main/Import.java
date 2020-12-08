@@ -9,7 +9,7 @@ import java.util.List;
 public class Import {	
 	public static void main (String[] args) throws IOException {
 
-		String owlFile = "C:\\Users\\Jess\\Documents\\eclipse-workspace\\OntoJena\\src\\main\\wine.owl";
+		String owlFile = "C:\\Users\\Jess\\Documents\\eclipse-workspace\\OntoJena\\src\\main\\wine_agora_vai.owl";
 		System.out.println("Arquivo owl: " + owlFile);
 				
 		System.out.println("Carregando ontologia...");
@@ -18,18 +18,25 @@ public class Import {
 		
 		System.out.println("URI da Ontologia: " + ont.getURI());
 		
+		System.out.println("Classes da Ontologia: ");
+		
 		ont.listClasses();
+		
+		System.out.println("Classes da Ontologia Inferida: ");
+
+		ont.listClassesInf();
 		
 		System.out.println("Número de triplas: " + ont.getTriples());
 		
 		System.out.println("Triplas da Ontologia:");
+		//ont.listTriplesInfer();
 		// ont.listTriplesSubclass();
 		
 		// escrevendo arquivo csv
-		String csvFile = "C:\\\\Users\\\\Jess\\\\Documents\\\\eclipse-workspace\\\\OntoJena\\\\src\\\\main\\triples_wine.csv";
+		/** String csvFile = "C:\\\\Users\\\\Jess\\\\Documents\\\\eclipse-workspace\\\\OntoJena\\\\src\\\\main\\triples_wine.csv";
         FileWriter writer = new FileWriter(csvFile);
 
-        List<Tripla> lista_triplas = ont.listTriples();
+        List<Tripla> lista_triplas = ont.listTriplesInf();
         //for header
         ExportCsv.writeLine(writer, Arrays.asList("n1", "n2", "predicado"));
 
@@ -42,8 +49,10 @@ public class Import {
             ExportCsv.writeLine(writer, list);
         }
 
-        writer.flush();
-        writer.close();
+      //  writer.flush();
+        writer.close(); **/
+		
+		ont.listClassesCsv();
 
 		// System.out.println("Indivíduos da Ontologia:");
 		// ont.listIndividuals();
