@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1593122475767" name="duplicate:http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1593122475767" name="duplicate:http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza_downloaded2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596746453025" name="duplicate:http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596746453025" name="duplicate:http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza_downloaded2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596746453025" name="http://www.semanticweb.org/jess/ontologies/2020/7/untitled-ontology-22" uri="wine_inferred.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596746453025" name="http://www.semanticweb.org/jess/ontologies/2020/7/untitled-ontology-agora-vai" uri="wine_agora_vai.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596746453025" name="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" uri="wine.owl"/>
     </group>
 </catalog>
